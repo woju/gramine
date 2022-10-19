@@ -67,7 +67,7 @@ override_dh_auto_configure:
 	meson setup \
 		$(MESONARGS) \
 		-Dsgx_driver=oot \
-		-Dsgx_driver_include_path=$(DEBIANDIR)/../linux-sgx-driver \
+		-Dsgx_driver_include_path=/usr/include \
 		debian/build-oot
 	
 override_dh_auto_build:

@@ -118,14 +118,12 @@ override_dh_auto_install:
 #	chmod +x debian/gramine*/usr/lib/x86_64-linux-gnu/gramine/direct/libpal.so
 
 override_dh_strip override_dh_makeshlibs override_dh_shlibdeps:
-	:
+
 # direct/libpal.so must be executable
 override_dh_fixperms:
-	:
 
 # TODO run tests
 override_dh_auto_test:
-	:
 
 # dh_make generated override targets
 # This is example for Cmake (See https://bugs.debian.org/641051 )
